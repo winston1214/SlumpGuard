@@ -74,11 +74,11 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>SlumpGuard - Youngmin Kim</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/pouring.ico">
+  <link rel="apple-touch-icon" href="static/images/pouring.ico">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -322,13 +322,13 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+      <video
+        poster="" id="tree" autoplay controls muted loop preload="metadata" style="width: 100%; aspect-ratio: 16/9; height: auto; display: block; margin: 0 auto; object-fit: contain;">
+        <source src="static/videos/Slump_demo.mp4" type="video/mp4">
+      </video> 
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Our SlumpGuard system's real demonstration video
       </h2>
     </div>
   </div>
@@ -361,22 +361,134 @@
     <div class="container">
       <h2 class="title is-3 has-text-centered">Overview</h2>
       <div class="has-text-centered">
-        <img src="static/images/pipeline.png" alt="Our pipeline for slump prediction" loading="lazy" style="max-width: 80%; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);"/>
-        <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+        <img src="static/images/graphical_figure.png" alt="Our pipeline for slump prediction" loading="lazy" style="max-width: 80%; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);"/>
+        <!-- <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
           Our SlumpGuard pipeline.
-        </h2>
+        </h2> -->
         <!-- 추가 텍스트 -->
-        <div class="content has-text-justified" style="max-width: 100%; margin: 1.5rem auto 0;">
-          <p>
-            여기에 이미지에 대한 설명 텍스트를 작성하세요.
-          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Dataset</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump1.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 1: 150 ~ 180 (Slump 150mm)
+          </h2>
+        </div>
+        <div class="item item-video2">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 2: 180 ~ 210 (Slump 200mm)
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 3: Under 150 (Slump 145mm)
+          </h2>
+        </div>
+        <div class="item item-video4">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/slump4.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+              Example 4: 180 ~ 210 (Slump 190mm)
+            </h2>
+          </div>
+        <div class="item item-video5">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video5" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump5.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 5: Over 240 (Slump 280mm)
+          </h2>
+        </div>
+        <div class="item item-video6">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video6" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump6.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 6: 210 ~ 240 (Slump 230mm)
+          </h2>
+        </div>
+        <div class="item item-video7">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video7" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump7.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 7: 150 ~ 180 (Slump 170mm)
+          </h2>
+        </div>
+        <div class="item item-video8">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video8" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump8.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 7: 180 ~ 210 (Slump 190mm)
+          </h2>
+        </div>
+        <div class="item item-video9">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video9" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump9.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 9: 150 ~ 180 (Slump 165mm)
+          </h2>
+        </div>
+        <div class="item item-video10">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video10" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/slump10.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+            Example 10: 210 ~ 240 (Slump 220mm)
+          </h2>
+        </div>
+      </div>
+            <!-- 캐러셀 끝난 직후 설명 -->
+      <div class="content has-text-justified" style="max-width: 100%; margin: 1.5rem auto 0;">
+        <p>
+          We constructed a dataset of 6,443 video clips capturing real concrete pouring from mixer-truck chutes. All videos were recorded using a stereo camera, producing two synchronized viewpoints per experiment, and each 10-second clip contains detailed observations of chute-level flow behavior. Ground-truth slump values were obtained through traditional slump testing to ensure accurate supervision. Using this dataset, we also conducted an expert evaluation study, where experienced engineers visually estimated slump values, revealing substantial expert variability and demonstrating the need for automated assessment.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
 
 
 <!-- Single Image -->
@@ -392,8 +504,10 @@
         <!-- 추가 텍스트 -->
         <div class="content has-text-justified" style="max-width: 100%; margin: 1.5rem auto 0;">
           <p>
-            여기에 이미지에 대한 설명 텍스트를 작성하세요. 여기에 이미지에 대한 설명 텍스트를 작성하세요. 여기에 이미지에 대한 설명 텍스트를 작성하세요. 여기에 이미지에 대한 설명 텍스트를 작성하세요. 여기에 이미지에 대한 설명 텍스트를 작성하세요.
-            여기에 이미지에 대한 설명 텍스트를 작성하세요. 여기에 이미지에 대한 설명 텍스트를 작성하세요. 여기에 이미지에 대한 설명 텍스트를 작성하세요. 여기에 이미지에 대한 설명 텍스트를 작성하세요. 여기에 이미지에 대한 설명 텍스트를 작성하세요.
+            <b>Stage 1 (Chute Detection):</b> The system automatically detects the mixer-truck chute using an oriented object detector and tracks the chute region over time. Once the chute location stabilizes, the region is fixed to minimize computation and to isolate the relevant pouring area.<br>
+            <b>Stage 2 (Pouring Location & Timing Detection):</b> To determine when and from which chute the concrete begins to flow, we analyze motion using optical flow. By tracking the center point of the chute region and checking when it crosses the bottom boundary, the system identifies the exact drop timing and active chute.<br>
+            <b>Stage 3 (Slump Prediction):</b> After detecting the pouring moment, the system extracts a short video segment of the flowing concrete and feeds it into a 3D video classification model. The predicted slump range is aggregated over multiple clips using majority voting, enabling stable, real-time slump estimation.
+            
           </p>
         </div>
       </div>
@@ -405,6 +519,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3 has-text-centered">Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
@@ -447,87 +562,7 @@
 
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Examples of Our Custom Data</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump3.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-            <!-- TODO: Add poster image for better preview -->
-            <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
-              <!-- Your video file here -->
-              <source src="static/videos/slump4.mp4" type="video/mp4">
-            </video>
-          </div>
-        <div class="item item-video5">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video5" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump5.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video6">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video6" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump6.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video7">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video7" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump7.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video8">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video8" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump8.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video9">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video9" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump9.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video10">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video10" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/slump10.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+
 
 
 
