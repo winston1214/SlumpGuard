@@ -537,6 +537,25 @@
           <b>Human Evaluation</b>
         </h2>
         <img src="static/images/human_eval.jpg" alt="Human Evaluation" loading="lazy" style="max-width: 80%; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);"/>
+        <h2 class="subtitle has-text-centered" style="margin-top: 2rem; font-size: 1.8rem; font-weight: bold;">
+          <b>YOLO Results</b>
+        </h2>
+        <div id="yolo-results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="yolo-video1" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/yolo1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="yolo-video2" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/yolo2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
         <!-- <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
           Statistics of our dataset
         </h2> -->
@@ -550,79 +569,10 @@
 
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/pipeline.png" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          Our pipeline for slump prediction.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2> -->
-
-      <!-- TODO: Replace with your poster PDF -->
-      <!-- <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe> -->
-        
-    <!-- </div>
-  </div>
-</section> -->
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-<section class="section" id="BibTeX">
+<section class="section" id="contact">
   <div class="container is-max-desktop content">
     <div class="bibtex-header">
       <h2 class="title">BibTeX</h2>
@@ -639,10 +589,42 @@ year={2025}
 }</code></pre>
   </div>
 </section>
+
+
+
+<!--Contact-->
+<section class="section hero is-light" id="contact">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Contact</h2>
+        <div class="content">
+          <p class="is-size-5" style="margin-bottom: 1.5rem;">
+            Please contact us if you have any questions or feedback.
+          </p>
+          <p class="is-size-5">
+            <a href="mailto:winston1214@yonsei.ac.kr" class="button is-large is-primary is-rounded">
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>Send Email</span>
+            </a>
+          </p>
+          <p class="is-size-6" style="margin-top: 1rem; color: #666;">
+            Or you can send me an email directly: 
+            <a href="mailto:winston1214@yonsei.ac.kr" style="color: #2563eb; text-decoration: underline;">
+              winston1214@yonsei.ac.kr
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -660,7 +642,7 @@ year={2025}
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
+
   
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
